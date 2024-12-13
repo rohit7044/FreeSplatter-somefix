@@ -3,7 +3,7 @@
 # FreeSplatter: Pose-free Gaussian Splatting for Sparse-view 3D Reconstruction
 
 <a href='https://bluestyle97.github.io/projects/freesplatter/'><img src='https://img.shields.io/badge/Project_Page-Website-red?logo=googlechrome&logoColor=white' alt='Project Page'></a>
-<a href="https://github.com/TencentARC/FreeSplatter"><img src='https://img.shields.io/badge/arXiv-Paper-green?logo=arxiv&logoColor=white' alt='arXiv'></a>
+<a href="https://arxiv.org/abs/2412.09573"><img src='https://img.shields.io/badge/arXiv-Paper-green?logo=arxiv&logoColor=white' alt='arXiv'></a>
 <a href="https://huggingface.co/TencentARC/FreeSplatter"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model_Card-Huggingface-orange"></a> 
 <a href="https://huggingface.co/spaces/TencentARC/FreeSplatter"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Gradio%20Demo-Huggingface-orange"></a> <br>
 
@@ -26,7 +26,7 @@ If you find our work useful for your research or applications, please cite using
 @article{xu2024freesplatter,
   title={FreeSplatter: Pose-free Gaussian Splatting for Sparse-view 3D Reconstruction},
   author={Xu, Jiale and Gao, Shenghua and Shan, Ying},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2412.09573},
   year={2024}
 }
 ```
