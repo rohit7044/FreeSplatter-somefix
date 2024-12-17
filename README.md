@@ -13,7 +13,8 @@
 
 This repo is the official implementation of FreeSplatter, a feed-forward framework capable of generating high-quality 3D Gaussians from uncalibrated sparse-view images and recovering their camera parameters in mere seconds.
 
-<p align="center"><img src="assets/pipeline.png" width="100%"></p>
+
+https://github.com/user-attachments/assets/0c73b693-9428-46bd-843c-132434b9686f
 
 # 🚩 Todo
 We will release the code soon, stay tuned!
