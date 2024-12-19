@@ -17,7 +17,7 @@ This repo is the official implementation of FreeSplatter, a feed-forward framewo
 https://github.com/user-attachments/assets/0c73b693-9428-46bd-843c-132434b9686f
 
 # 🚩 Todo
-We will release the code soon, stay tuned!
+We will release the code soon, stay tuned! Feel free to try our [huggingface demo](https://huggingface.co/spaces/TencentARC/FreeSplatter) for image-to-3D generation 🔥🔥🔥!
 
 # :books: Citation
 
