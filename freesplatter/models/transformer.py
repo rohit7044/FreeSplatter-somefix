@@ -159,12 +159,6 @@ class Transformer(nn.Module):
         view_embeds = torch.cat([self.ref_embed, self.src_embed.repeat(1, N-1, 1)], dim=1)
         tokens = tokens + view_embeds.unsqueeze(2)
 
-        # tokens = rearrange(tokens, '(b n) hw c -> b n hw c', b=B)
-        # tokens = tokens + self.interpolate_pos_encoding(tokens, W, H).unsqueeze(1)
-        # view_embeds = self.src_embed.repeat(1, N, 1)
-        # view_embeds[:, 0:1] = torch.zeros_like(self.ref_embed)
-        # tokens = tokens + view_embeds.unsqueeze(2)
-
         # transformer
         tokens = rearrange(tokens, 'b n hw c -> b (n hw) c')
         x = tokens

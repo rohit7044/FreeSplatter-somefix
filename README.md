@@ -24,9 +24,6 @@ conda create --name freesplatter python=3.10
 conda activate freesplatter
 pip install -U pip
 
-# Install the correct version of CUDA
-conda install cuda -c nvidia/label/cuda-12.1.0
-
 # Install PyTorch and xformers
 # You may need to install another xformers version if you use a different PyTorch version
 pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu121
