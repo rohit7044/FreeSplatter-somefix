@@ -1,0 +1,21 @@
+model:
+  target: freesplatter.models.model.FreeSplatterModel
+  params:
+    transformer_config:
+      target: freesplatter.models.transformer.Transformer
+      params:
+        patch_size: 8
+        input_dim: 3
+        inner_dim: 1024
+        output_dim: 23
+        depth: 24
+        n_heads: 16
+    renderer_config:
+      sh_degree: 1
+      img_height: 512
+      img_width: 512
+      scaling_activation_type: sigmoid
+      scale_min_act: 0.0001
+      scale_max_act: 0.02
+      scale_multi_act: 0.1
+    sh_residual: false
