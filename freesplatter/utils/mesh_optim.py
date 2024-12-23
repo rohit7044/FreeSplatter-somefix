@@ -11,8 +11,6 @@ import cv2
 from PIL import Image
 import fast_simplification
 
-from freesplatter.utils.mesh import Mesh
-
 
 def parametrize_mesh(vertices: np.array, faces: np.array):
     """
@@ -153,7 +151,7 @@ def bake_texture(
 
 
 def optimize_mesh(
-    mesh: Mesh,
+    mesh,
     images: torch.Tensor,
     masks: torch.Tensor,
     extrinsics: torch.Tensor,
@@ -165,13 +163,11 @@ def optimize_mesh(
     """
     Convert a generated asset to a glb file.
     Args:
-        mesh (Mesh): Extracted mesh.
+        mesh: Extracted mesh.
         simplify (float): Ratio of faces to remove in simplification.
         texture_size (int): Size of the texture.
         verbose (bool): Whether to print progress.
     """
-    # vertices = mesh.v.cpu().numpy()
-    # faces = mesh.f.cpu().numpy()
     vertices = np.array(mesh.vertices).astype(float)
     faces = np.array(mesh.faces).astype(int)
 
