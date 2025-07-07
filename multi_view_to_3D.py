@@ -60,5 +60,8 @@ print(f"📍 Turntable .mp4:    {turntable_video_path}")
 print(f"📍 Optimized mesh:     {mesh_glb_path}")
 
 pose_plot_path = os.path.join(OUTPUT_DIR, "pose_plot.png")
-pose_fig.savefig(pose_plot_path)
+if hasattr(pose_fig, "savefig"):
+    pose_fig.savefig(os.path.join(OUTPUT_DIR, "pose_plot.png"))
+else:
+    print("⚠️ pose_fig is not a valid Matplotlib figure, skipping plot save.")
 print(f"📍 Camera pose plot:  {pose_plot_path}")
