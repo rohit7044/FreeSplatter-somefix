@@ -106,9 +106,10 @@ with gr.Blocks(analytics_enabled=False, title='FreeSplatter Demo', theme=gr.them
 
     gr.Markdown(_CITE_)
 
-demo.queue().launch(
-    share=False, 
-    server_name="0.0.0.0", 
-    server_port=41137, 
-    ssl_verify=False,
-)
+# demo.queue().launch(
+#     share=False, 
+#     server_name="0.0.0.0", 
+#     server_port=41137, 
+#     ssl_verify=False,
+# )
+demo.queue().launch()
